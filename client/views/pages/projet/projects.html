@@ -2,13 +2,13 @@
 <template name="projetsListe">
 
 {{#each projets}}
-    {{> projetDetail}}
+    {{> projetSummaire}}
 {{/each}}
 
 </template>
 
 
-<template name="projetDetail">
+<template name="projetSummaire">
 
   <tr>
       <td class="project-status">
@@ -29,12 +29,11 @@
           <a href=""><img alt="image" class="img-circle" src="img/a3.jpg"></a>
           <a href=""><img alt="image" class="img-circle" src="img/a1.jpg"></a>
           <a href=""><img alt="image" class="img-circle" src="img/a2.jpg"></a>
-          <a href=""><img alt="image" class="img-circle" src="img/a4.jpg"></a>
-          <a href=""><img alt="image" class="img-circle" src="img/a5.jpg"></a>
+
       </td>
       <td class="project-actions">
-          <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
-          <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+          <a href={{pathFor 'projetDetail'}}  class="btn btn-white btn-sm"><i class="fa fa-folder"></i> Détail du projet </a>
+          
       </td>
   </tr>
 

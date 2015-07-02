@@ -1,0 +1,1 @@
+Meteor.publish(  'projets',  function() {    return Projets.find();});
